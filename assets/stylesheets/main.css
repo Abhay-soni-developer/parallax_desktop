@@ -1,0 +1,132 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul,li{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+.clearfix::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+
+img {
+    width: 100%;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+p, span, h1, h2, h3, h4, h5, h6 {
+    font: 400 15px/1.8 "Lato", sans-serif;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.heading1{
+    padding: 0px;
+    margin: 0px;
+    font: 400 15px/1.8 "Lato", sans-serif;
+    font-size: 25px;
+    padding: 18px;
+    letter-spacing: 10px;
+    color: white;
+    background-color: #111;
+}
+
+.sec1, .sec7{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../images/img_parallax.jpg);
+    background-size: cover;
+    background-position: 0 -110px;
+    /* filter: blur(5px); */
+    opacity: 0.65;
+    position: relative;
+}
+
+.scrollBtn {
+    display: inline-block;
+}
+
+.sec2{
+    width: 100%;
+    display: inline-block;
+    padding: 50px 80px;
+}
+
+.sec2_heading{
+    text-align: center;
+}
+
+.sec2_heading > h3 {
+    letter-spacing: 5px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.sec2_article>p{
+    color: #777;
+}
+
+.sec3, .sec5 {
+    min-height: 400px;
+    background-size: cover;
+    background-image: url(../images/img_parallax2.jpg);
+    background-position: 0 -200px;
+    position: relative;
+    opacity: 0.65;
+}
+
+.sec_heading{
+    padding: 18px;
+    background-color: transparent;
+}
+
+.sec_heading h3 {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-size: 25px;
+}
+
+.sec4, .sec6 {
+    min-height: 150px;
+    padding: 50px 80px;
+    background-color: #282E34;
+}
+
+.sec4_article p {
+    color: white;
+}
+
+.sec5{
+    background-image: url(../images/img_parallax3.jpg);
+}
+
+.sec1, .sec3, .sec5, .sec7 {
+    background-attachment: fixed;
+}
